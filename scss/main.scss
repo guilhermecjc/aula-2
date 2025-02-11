@@ -1,8 +1,10 @@
-@use 'utils/variables'; // Importando o arquivo de variáveis
-@use 'utils/mixins'; // Importando o arquivo de mixins
+// main.scss
+
+@use 'utils/variables' as v; // Importando o arquivo de variáveis
 @use 'base/reset'; // Importando o reset
 @use 'base/typography'; // Importando a tipografia
-@use 'layout/header'; // Importando o header
-@use 'layout/footer'; // Importando o footer
-@use 'layout/grid'; // Importando o grid
+@use 'components/header'; // Importando o cabeçalho
+@use 'components/footer'; // Importando o rodapé
 @use 'pages/home'; // Importando a página inicial
+@use 'pages/about'; // Importando a página sobre
+@use 'pages/contact'; // Importando a página de contato

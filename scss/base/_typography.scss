@@ -1,7 +1,28 @@
-@use '../utils/variables'; // Importando o arquivo de variáveis
+// _typography.scss
 
-body {
-    font-family: variables.$font-stack; // Usando a variável com o namespace
-    line-height: 1.6;
-    color: #333;
+@use 'base/variables'; // Importando o arquivo de variáveis
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: variables.$heading-font; // Usando a variável com o namespace
+    color: variables.$primary-color; // Usando a variável com o namespace
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: variables.$base-font-size; // Usando a variável com o namespace
+    margin-bottom: 1em;
 }

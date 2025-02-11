@@ -1,10 +1,9 @@
-/* Error: There is no module with the namespace "variables".
+/* Error: Can't find stylesheet to import.
  *   ,
- * 6 |     background-color: variables.$primary-color; // Usando a variável com o namespace
- *   |                       ^^^^^^^^^^^^^^^^^^^^^^^^
+ * 3 | @use 'utils/variables' as v; // Importando o arquivo de variáveis
+ *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
- *   scss\layout\_header.scss 6:23  @use
- *   scss\main.scss 5:1             root stylesheet */
+ *   scss\main.scss 3:1  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -14,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "variables".\a   \2577 \a 6 \2502      background-color: variables.$primary-color; // Usando a vari\e1 vel com o namespace\d\a   \2502                        ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\layout\\_header.scss 6:23  @use\a   scss\\main.scss 5:1             root stylesheet';
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @use 'utils/variables' as v; // Importando o arquivo de vari\e1 veis\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\main.scss 3:1  root stylesheet";
 }

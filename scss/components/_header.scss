@@ -1,15 +1,14 @@
 @use '../utils/variables' as *; // Usando as variáveis diretamente
-@use '../utils/mixins';
+@use '../utils/mixins'; // Importando mixins
 
-// Estilo do header
 header {
-    background-color: variables.$primary-color; // Usando a variável com o namespace
+    background-color: $primary-color; // Usando a variável diretamente
     color: white;
     padding: 1rem;
 
     nav ul {
         list-style: none;
-        @include mixins.flex-center; // Usando o mixin com o namespace
+        @include mixins.flex-center; // Usando o mixin corretamente
 
         li {
             margin: 0 1rem;

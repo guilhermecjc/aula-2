@@ -1,0 +1,8 @@
+@use '../utils/variables' as *; // Importando o arquivo de variáveis
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: $secondary-color; // Usando a variável com o namespace
+    color: white;
+}
