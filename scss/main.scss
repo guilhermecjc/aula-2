@@ -1,0 +1,8 @@
+@use 'utils/variables'; // Importando o arquivo de variáveis
+@use 'utils/mixins'; // Importando o arquivo de mixins
+@use 'base/reset'; // Importando o reset
+@use 'base/typography'; // Importando a tipografia
+@use 'layout/header'; // Importando o header
+@use 'layout/footer'; // Importando o footer
+@use 'layout/grid'; // Importando o grid
+@use 'pages/home'; // Importando a página inicial

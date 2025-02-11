@@ -1,0 +1,7 @@
+@use '../utils/variables'; // Importando o arquivo de variáveis
+
+body {
+    font-family: variables.$font-stack; // Usando a variável com o namespace
+    line-height: 1.6;
+    color: #333;
+}
